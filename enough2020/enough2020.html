@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title={cardTitle}>
+        <p class="slds-m-left_large">
+            <lightning-icon icon-name={resultIcon}></lightning-icon> 
+            <template if:true={notYet}>
+                &nbsp;&nbsp;&nbsp;{messageStart}<strong>{daysUntil2020}</strong>{messageEnd}
+            </template>
+        </p>
+    </lightning-card>
+</template>
